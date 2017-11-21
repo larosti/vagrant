@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/devops-kungfu":{"create":true,"guestpath":"/home/vagrant/devops-kungfu","hostpath":"/Users/vova/Downloads/Git/devops-intro-project-1/devops-kungfu","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/vova/vagrant_file","disabled":false,"__vagrantfile":true}}}
