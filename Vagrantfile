@@ -16,12 +16,12 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
 
-config.vm.define "devops-appserver" do |devops-appserver|
+config.vm.define "devops-appserver" do |devopsappserver|
 
-  config.vm.box = "devops-appserver"
-  config.vm.network "forwarded_port", guest: 80, host: 8080
-  config.vm.synced_folder "../../devops-kungfu", "/home/vagrant/devops-kungfu", create: true
-  
+  devopsappserver.vm.box = "devops-appserver"
+  devopsappserver.vm.network "forwarded_port", guest: 80, host: 8080
+  devopsappserver.vm.synced_folder "/Users/vova/Downloads/Git/devops-intro-project-1/devops-kungfu", "/home/vagrant/devops-kungfu", create: true
+  #devopsappserver.vm.synced_folder "../../devops-kungfu", "/home/vagrant/devops-kungfu", create: true  
 end
 
 config.vm.define "first" do |first|
